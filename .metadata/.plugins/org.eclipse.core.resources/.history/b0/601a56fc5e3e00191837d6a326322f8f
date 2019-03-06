@@ -1,0 +1,14 @@
+import java.util.*;
+import java.math.*;
+
+public class BigIntegerTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner in = new Scanner (System.in);
+		System.out.println("How many numbers do you need to draw? ");
+		int k = in.nextInt();
+	}
+
+}
