@@ -1,9 +1,0 @@
-
-public class ArrayTest {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int¡¾¡¿ samllPrimes = {2,3,5,7,11,13};
-	}
-
-}
