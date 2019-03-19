@@ -5,5 +5,10 @@
 <fullyQualifiedTypeName name="javax.swing.text.StyleContext.SmallAttributeSet"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="Employee"/>
+<fullyQualifiedTypeName name="com.yangyongfeng.corejava.Employee"/>
+<fullyQualifiedTypeName name="java.util.Objects"/>
 </qualifiedTypeNameHistroy>
