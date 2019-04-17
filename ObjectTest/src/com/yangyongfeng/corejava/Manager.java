@@ -32,4 +32,10 @@ public class Manager extends Employee {
 		return this.getBonus() == other.getBonus();
 	}
 	
+	public String toString() {
+		return super.toString()
+				+ "[ "
+				+ "bonus = " + this.getBonus()
+				+ "] ";
+	}
 }
