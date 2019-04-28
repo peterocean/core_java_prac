@@ -1,4 +1,3 @@
-
 package corejava.yangyongfeng.com;
 
 import java.time.LocalDate;
@@ -7,15 +6,8 @@ public class Employee {
 	
 	private String name;
 	private double salary;
-	private LocalDate hireDay;
-	public final static int NAME_SIZE = 30;
-	public final static int RECORD_SIZE = NAME_SIZE*2 + 8 + 4 + 4 + 4;
-		
-	public Employee() {
-		//super();
-		// TODO Auto-generated constructor stub
-	}
-
+	PUBL LocalDate hireDay;
+	
 	public Employee(String name, double salary, int year, int month, int dayOfMonth) {
 		this.name = name;
 		this.salary = salary;
@@ -41,10 +33,5 @@ public class Employee {
 		this.hireDay = hireDay;
 	}
 	
-	public String toString() {
-		return "name:" + getName() + ", " 
-				+ "salary:" + getSalary() + ", "
-				+ "hireDay:" + getHireDay().toString();
-	}
 	
 }
