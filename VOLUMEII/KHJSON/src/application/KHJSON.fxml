@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea id="ID_TEXTAREA_JSON_CONTENT" layoutX="92.0" layoutY="189.0" prefHeight="200.0" prefWidth="480.0" promptText="{&#10;&#9;name: &quot;zhkh&quot;,&#10;&#9;founded at:&quot;1995&quot;&#10;}" />
+      <Label layoutX="22.0" layoutY="274.0" text="JSON内容" />
+      <TextArea id="ID_TEXTAREA_HEX_FRAME" editable="false" layoutX="92.0" layoutY="406.0" prefHeight="122.0" prefWidth="480.0" />
+      <Label layoutX="49.0" layoutY="460.0" text="报文" />
+      <Button id="ID_BUTTON_GENERATE_FRAME" layoutX="429.0" layoutY="546.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="143.0" text="生成报文" />
+      <TextField id="ID_TextField_FRAME_ADDR" layoutX="141.0" layoutY="104.0" prefHeight="23.0" prefWidth="150.0" promptText="请输入帧地址" />
+      <Label layoutX="95.0" layoutY="108.0" text="地址" />
+      <TextField id="ID_TextField_PROT_VER" layoutX="410.0" layoutY="104.0" />
+      <Label layoutX="345.0" layoutY="108.0" text="协议版本" />
+      <Label layoutX="83.0" layoutY="141.0" prefHeight="23.0" prefWidth="48.0" text="传输方向" />
+      <Label layoutX="345.0" layoutY="145.0" text="数据标识" />
+      <TextField id="ID_TextField_DataFlag" editable="false" layoutX="410.0" layoutY="141.0" text="0000" />
+      <Label layoutX="152.0" layoutY="30.0" text="科荟通用JSON协议报文生成器">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="141.0" layoutY="141.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
