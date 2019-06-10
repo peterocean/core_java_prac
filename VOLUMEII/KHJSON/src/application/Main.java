@@ -19,7 +19,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
-
+import KHJSON.*;
 
 public class Main extends Application {
 	@Override
@@ -28,14 +28,23 @@ public class Main extends Application {
 		   Parent root = FXMLLoader.load(getClass().getResource("KHJSON.fxml"));
 	       TextArea textArea = (TextArea)root.lookup("#ID_TEXTAREA_JSON_CONTENT");
 	       TextArea textAreaHexFrameContent = (TextArea)root.lookup("#ID_TEXTAREA_HEX_FRAME");
-	        Button button = (Button)root.lookup("#ID_BUTTON_GENERATE_FRAME");
-	        
+	       Button button = (Button)root.lookup("#ID_BUTTON_GENERATE_FRAME");
+	       Button btnJsonToHex = (Button)root.lookup("#ID_BUTTON_JSON_TO_HEX");
 	        button.setOnAction(new EventHandler<ActionEvent>() {
 				
 				@Override
 				public void handle(ActionEvent event) {
 					String JSONcontent = textArea.getText();
 					textAreaHexFrameContent.setText(JSONcontent);
+				}
+			});
+	        
+	        btnJsonToHex.setOnAction(new EventHandler<ActionEvent>() {
+	        	@Override
+				public void handle(ActionEvent event) {
+					String JSONcontent = textArea.getText();
+					String s = KHJSON.JSONStringToHexString(JSONcontent);
+					textAreaHexFrameContent.setText(s);
 				}
 			});
 	        
